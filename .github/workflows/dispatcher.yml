@@ -28,6 +28,4 @@ jobs:
     needs:
       - dispatcher
     uses: ./.github/workflows/build-and-deploy.yml
-    with:
-      release: ${{ github.event.inputs.release }}
     secrets: inherit
