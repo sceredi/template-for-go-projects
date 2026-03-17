@@ -11,7 +11,7 @@ COPY ./internal ./internal
 RUN go build -o main ./cmd/app/main.go
 
 # Final stage
-FROM alpine:3.21
+FROM alpine:3.23
 
 WORKDIR /app
 COPY --from=builder /app/main .
