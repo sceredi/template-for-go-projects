@@ -40,7 +40,7 @@ jobs:
       - name: Check formatting
         run: go fmt ./...
       - name: Run linter
-        uses: golangci/golangci-lint-action@v9.2.1
+        uses: golangci/golangci-lint-action@v9.3.0
 
   dry-website-build:
     concurrency:
